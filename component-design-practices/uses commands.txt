@@ -1,0 +1,10 @@
+// load tailwind css classes
+$ npx tailwindcss-cli build css/tailwind.css -o build/tailwind.css
+
+$ npm init -y
+
+// install required library
+$ npm i -D tailwindcss postcss autoprefix autoprefixer vite
+
+// configure tailwind and post css
+$ npx tailwindcss init -p
