@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <title>Tailwind Practices</title>
+</head>
+
+<body class="bg-gray-300">
+    <div class="bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5">
+        <div class="px-8 py-12 lg:py-20 mx-auto max-w-md sm:max-w-xl lg:max-w-full xl:mr-0 2xl:col-span-2">
+            <div class="space-y-6 xl:max-w-xl">
+                <img src="/img/logo.svg" class="h-10" alt="Workstation">
+                <img src="/img/beach-work.jpg"
+                    class="rounded-lg shadow-xl sm:h-64 sm:w-full sm:object-cover object-top lg:hidden" alt="Beach">
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">You can work from anywhere.
+                    <br class="hidden md:inline" />
+                    <span class="text-indigo-500">Take
+                        advantage of it.</span>
+                </h1>
+                <p class="text-green-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, perspiciatis
+                    ullam
+                    atque adipisci at ab tenetur hic harum rem accusantium laborum possimus, sequi vitae suscipit
+                    necessitatibus debitis explicabo ipsum similique.</p>
+                <div class="space-x-1">
+                    <a href="#" class="btn btn-primary">Book your escape</a>
+                    <a href="#" class="btn btn-secondary shadow-none">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block relative 2xl:col-span-3">
+            <img src="/img/beach-work.jpg" class="object-cover object-center absolute inset-0 w-full h-full"
+                alt="Beach">
+        </div>
+    </div>
+</body>
+
+</html>
