@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: [],
   // mode: 'jit',
@@ -7,6 +9,10 @@ module.exports = {
   },
   variants: {
     extend: {
+      colors: {
+        sky: colors.sky,
+        cyan: colors.cyan,
+      },
       backgroundColor: ['group-hover', 'focus-within', 'hover', 'focus', 'active'],
       fontSize: ['hover'],
       translate: ['hover', 'active'],
